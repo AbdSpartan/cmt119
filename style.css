@@ -1,9 +1,8 @@
-body, * {
+body,
+* {
   box-sizing: border-box;
   background-color: black;
 }
-
-
 
 .navbar {
   padding-top: 40px;
@@ -12,13 +11,12 @@ body, * {
   padding-right: 20px;
   display: flex;
   justify-content: space-between;
-  font-family: 'Gabarito', sans-serif;
-
+  font-family: "Gabarito", sans-serif;
 }
 .navbar a {
   float: left;
   display: block;
-  color: #2196F3;
+  color: #2196f3;
   text-align: center;
   padding: 12px 16px;
   text-decoration: none;
@@ -28,84 +26,64 @@ body, * {
 .title .title-text {
   display: block;
   text-align: center;
-  font-family: 'Gabarito', sans-serif;
+  font-family: "Gabarito", sans-serif;
   text-decoration: none;
-  color: #2196F3;
+  color: #2196f3;
   align-items: center;
   font-size: 3em;
   padding-top: 30px;
-
 }
 
 .navbar .news {
-
-
 }
 
 .navbar .contact {
-
-
 }
 
 .navbar .about {
-
-
 }
-
-
 
 .nav-image {
   float: left;
   height: 40px;
   padding: 12px 16px;
-
-
 }
 
 .navbar h1 {
-
 }
-
-
-
 
 /* Change the color of links on hover */
 .navbar a:hover {
-
   color: white;
-  border-color: #2196F3;
+  border-color: #2196f3;
   border-right: none;
   border-bottom: solid;
   transition: all ease-in-out 0.2s;
-
-
 }
-
 
 /* Style the "active" element to highlight the current page */
 .navbar a.active {
-  background-color: #2196F3;
+  background-color: #2196f3;
   color: white;
 }
 
-
-.navbar input[type=text] {
+.navbar input[type="text"] {
   float: right;
   padding: 6px;
   border: none;
   font-size: 17px;
   margin-top: 8px;
   margin-right: 16px;
-  caret-color: #2196F3;
-  color: #2196F3
-
-
-
+  caret-color: #2196f3;
+  color: #2196f3;
 }
 
 /* Media query used to adjust the size of the navbar for all devices with screens less than 600px */
 @media (max-width: 600px) {
-  .navbar, .navbar a, .navbar input, .navbar a:hover [type=text] {
+  .navbar,
+  .navbar a,
+  .navbar input,
+  .navbar a:hover [type="text"] {
     float: none;
     display: block;
     text-align: left;
@@ -114,37 +92,40 @@ body, * {
     margin: 0;
     border-right: 2px;
     flex-direction: column;
+  }
 }
-  }
 
-  .container-header {
-    position: relative;
-    background-color: transparent;
-    color: transparent;
-
-  }
+.container-header {
+  position: relative;
+  background-color: transparent;
+  color: transparent;
+}
 .container-header img {
   border-radius: 25px;
   padding-top: 10px;
 }
 
 /*main heading of the page*/
-  .cmt {
+.cmt {
   animation-duration: 1s;
   animation-name: slidein;
-  font-family: 'Gabarito', sans-serif;
+  font-family: "Gabarito", sans-serif;
   position: absolute;
   top: 15%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #2196F3;
+  color: #2196f3;
   padding: 10px 20px;
   font-size: 20px;
   text-align: center;
   background-color: transparent;
-  }
+}
+
+.cmt h1 {
+    background-color: transparent;
+}
 /* Used to animate .cmt to come from the right to left */
-  @keyframes slidein {
+@keyframes slidein {
   from {
     margin-left: 100%;
     width: 300%;
@@ -156,23 +137,23 @@ body, * {
   }
 }
 
-  @media (max-width: 600px) {
-    .cmt, .cmt h1 {
-      word-wrap: break-word;
-      position: absolute;
-      top: 25%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      color: #2196F3;
-      padding: 5px 10px;
-      font-size: 30px;
-      text-align: center;
-      background: rgba(0, 0, 0, 0);
-    }
+@media (max-width: 600px) {
+  .cmt,
+  .cmt h1 {
+    word-wrap: break-word;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #2196f3;
+    padding: 5px 10px;
+    font-size: 30px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0);
   }
+}
 
-
-  .main-page {
-    display: flex;
-    flex-direction: row;
-  }
+.main-page {
+  display: flex;
+  flex-direction: row;
+}
